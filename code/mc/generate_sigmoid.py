@@ -1,5 +1,6 @@
 import numpy as np
 
+DATAPACK_PATH = 'datapacks/deepmine/data/deepmine/functions/'
 SCALE_FACTOR = 1000
 
 if __name__ == "__main__":
@@ -12,6 +13,6 @@ if __name__ == "__main__":
     for i in range(-7 * SCALE_FACTOR, 7 * SCALE_FACTOR + 1):
         txt += f'execute if score input deepmine.vars matches {i} run scoreboard players set output deepmine.vars {int(SCALE_FACTOR / (1 + np.exp(-i / SCALE_FACTOR)))}\n'
 
-    with open("mcfunction/functions/sigmoid.mcfunction", 'w') as f:
+    with open(DATAPACK_PATH + "functions/sigmoid.mcfunction", 'w') as f:
         f.write(txt)
 

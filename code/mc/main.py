@@ -1,6 +1,8 @@
 import os
 import numpy as np
 
+DATAPACK_PATH = 'datapacks/deepmine/data/deepmine/functions/'
+
 SCALE_FACTOR = 1000
 
 
@@ -83,9 +85,9 @@ if __name__ == "__main__":
         # Generate dense mcfunction files
         initialize_txt, calculate_txt = generate_dense(index, weights)
 
-        with open(f"mcfunction/init/{path_mcfunction}", 'w') as f:
+        with open(DATAPACK_PATH + f"init/{path_mcfunction}", 'w') as f:
             f.write(initialize_txt)
-        with open(f"mcfunction/call/{path_mcfunction}", 'w') as f:
+        with open(DATAPACK_PATH + f"call/{path_mcfunction}", 'w') as f:
             f.write(calculate_txt)
 
         # Generate relu mcfunction files
@@ -97,11 +99,11 @@ if __name__ == "__main__":
         relu_path = f'{index + 1}_relu.mcfunction'
         call_paths.append(relu_path)
 
-        with open(f"mcfunction/call/{relu_path}", 'w') as f:
+        with open(DATAPACK_PATH + f"call/{relu_path}", 'w') as f:
             f.write(relu_txt)
 
     # Generate main call function
     call_txt = generate_call(call_paths)
 
-    with open(f"mcfunction/call.mcfunction", 'w') as f:
+    with open(DATAPACK_PATH + f"call.mcfunction", 'w') as f:
             f.write(call_txt)

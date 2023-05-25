@@ -1,0 +1,16 @@
+execute if score logits[0] deepmine.vars matches ..0 run scoreboard players set logits[0] deepmine.vars 0
+execute if score logits[1] deepmine.vars matches ..0 run scoreboard players set logits[1] deepmine.vars 0
+execute if score logits[2] deepmine.vars matches ..0 run scoreboard players set logits[2] deepmine.vars 0
+execute if score logits[3] deepmine.vars matches ..0 run scoreboard players set logits[3] deepmine.vars 0
+execute if score logits[4] deepmine.vars matches ..0 run scoreboard players set logits[4] deepmine.vars 0
+execute if score logits[5] deepmine.vars matches ..0 run scoreboard players set logits[5] deepmine.vars 0
+execute if score logits[6] deepmine.vars matches ..0 run scoreboard players set logits[6] deepmine.vars 0
+execute if score logits[7] deepmine.vars matches ..0 run scoreboard players set logits[7] deepmine.vars 0
+execute if score logits[8] deepmine.vars matches ..0 run scoreboard players set logits[8] deepmine.vars 0
+execute if score logits[9] deepmine.vars matches ..0 run scoreboard players set logits[9] deepmine.vars 0
+execute if score logits[10] deepmine.vars matches ..0 run scoreboard players set logits[10] deepmine.vars 0
+execute if score logits[11] deepmine.vars matches ..0 run scoreboard players set logits[11] deepmine.vars 0
+execute if score logits[12] deepmine.vars matches ..0 run scoreboard players set logits[12] deepmine.vars 0
+execute if score logits[13] deepmine.vars matches ..0 run scoreboard players set logits[13] deepmine.vars 0
+execute if score logits[14] deepmine.vars matches ..0 run scoreboard players set logits[14] deepmine.vars 0
+execute if score logits[15] deepmine.vars matches ..0 run scoreboard players set logits[15] deepmine.vars 0

@@ -1,5 +1,6 @@
 import tensorflow as tf
 
+DATAPACK_PATH = 'datapacks/deepmine/data/deepmine/functions/'
 SCALE_FACTOR = 1000
 
 def generate_test(test_input, test_label, placeNumber=False):
@@ -38,7 +39,7 @@ if __name__ == "__main__":
     train_inputs, train_labels, test_inputs, test_labels = load_and_preprocess_data()
 
     for i in range(200):
-        path = f'mcfunction/test/{i}.mcfunction'
+        path = DATAPACK_PATH + f'test/{i}.mcfunction'
 
         txt = generate_test(test_inputs[i], test_labels[i], placeNumber=True)
         
